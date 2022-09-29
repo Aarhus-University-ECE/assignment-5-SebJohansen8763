@@ -1,6 +1,6 @@
 #include "jollyjumper.h"
 #include <stdbool.h>
-#include <malloc.h>
+#include <stdlib.h>
 
 
 
