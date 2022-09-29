@@ -12,8 +12,6 @@ int circleIsValid(const circle * c) {
 }
 
 void translate(circle* c, const point* p) {
-/*answer to exercise 6.d
+/*answer to exercise 6.d */
 }
-
-//hej
 
