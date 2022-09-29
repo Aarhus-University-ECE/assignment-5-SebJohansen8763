@@ -11,7 +11,7 @@ int circleIsValid(const circle * c) {
 	return 0
 }
 
-void translate(circle* c, const point* p) {
+void translate(circle * c, const point* p) {
 /*answer to exercise 6.d */
 }
 
