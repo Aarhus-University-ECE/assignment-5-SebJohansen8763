@@ -1,5 +1,6 @@
 {
 	"files.associations": {
-		"jollyjumper.h": "c"
+		"jollyjumper.h": "c",
+		"stdbool.h": "c"
 	}
 }

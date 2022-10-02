@@ -4,7 +4,10 @@ typedef struct point {
 	int y;
 } point;
 
-/*add your definition of circle here. You need top call it "circle"*/
+typedef struct circle { // struct som repræsenterer cirklen som indeholder point struct og radius
+	point p; // struct som indeholder x og y
+	int r; // radius
+} circle;
 
 void fiveCircles(circle c[]);
 int circleIsValid(const circle * c);

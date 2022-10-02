@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "circle.h"
-#include "jollyjumper.h"
+#include "circle.c"
+#include "jollyJumper.c"
+#include <stdbool.h>
 
 void printCircle(circle c) {
 	printf("p.x: %d, p.y: %d, r: %d\n", c.p.x, c.p.y, c.r);
@@ -15,24 +16,19 @@ int main(void) {
 		printCircle(c[i]);
 	}
 	point p;
-	p.x = 2;
-	p.y = 2;
+	p.x = 2; // det som vi vil til tilføje til cirklens x værdi
+	p.y = 2; // det som vi vil til tilføje til cirklens y værdi
 	translate(&c[1], &p);
 	printCircle(c[1]);
 	printf("isValid: %d", circleIsValid(&c[1]));
 
-	/*answer to exercise 7.b*/
-	int n; /*number of numbers to read*/
-	/*readin n and check that is is OK*/
-
-	int *numbers = malloc(sizeof(int) * n); /*the numbers read*/
-
-	/*readin the n numbers in the array numbers*/
+	int numbers[] = {11, 7, 4, 2, 1, 6};
+	int n = sizeof(numbers)/ sizeof(numbers[0]);
 
 	if (isJollyJumber(numbers, n)) {
-		printf("it is a Jolly Jumper");}
+		printf("\nJolly");}
 	else {
-		printf("not a Jolly Jumper");}
+		printf("\nNot Jolly");}
 	return 0;
 
 }
