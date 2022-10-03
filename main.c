@@ -3,6 +3,7 @@
 #include "circle.c"
 #include "jollyJumper.c"
 #include <stdbool.h>
+#include <assert.h>
 
 void printCircle(circle c) {
 	printf("p.x: %d, p.y: %d, r: %d\n", c.p.x, c.p.y, c.r);
@@ -22,13 +23,22 @@ int main(void) {
 	printCircle(c[1]);
 	printf("\nisValid: %d\n\n", circleIsValid(&c[1]));
 
-	int numbers[] = {11, 7, 4, 2, 1, 6};
-	int n = sizeof(numbers)/ sizeof(numbers[0]);
+	int n; /*number of numbers to read*/
+	scanf("%d", &n); /*readin n and check that is is OK*/
+	assert(n>0);
+
+	int *numbers = malloc(sizeof(int) * n); /*the numbers read*/
+
+	/*read in the n numbers in the array numbers*/
+	for (int i = 0; i < n; i++)
+  		scanf("%d", &numbers[i]);
+
 
 	if (isJollyJumper(numbers, n)) {
-		printf("\n\nJolly\n");}
+		printf("it is a Jolly Jumper");}
 	else {
-		printf("\n\nNot Jolly\n");}
+		printf("not a Jolly Jumper");}
+
 	return 0;
 
 }
