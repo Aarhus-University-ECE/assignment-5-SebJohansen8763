@@ -6,7 +6,7 @@
 #include <assert.h>
 
 void printCircle(circle c) {
-	printf("p.x: %d, p.y: %d, r: %d\n", c.p.x, c.p.y, c.r);
+	printf("\np.x: %d, p.y: %d, r: %d\n", c.p.x, c.p.y, c.r);
 }
 
 int main(void) {
