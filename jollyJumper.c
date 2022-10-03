@@ -2,8 +2,9 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <assert.h>
 
-int isJollyJumber(const int seq[], int size) {
+int isJollyJumper(const int seq[], int size) {
     bool diffs_found[size];
     for (int i = 0; i < size-1; i++) {
         // printf("\n%d", seq[i]);

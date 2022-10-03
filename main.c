@@ -20,15 +20,15 @@ int main(void) {
 	p.y = 2; // det som vi vil til tilføje til cirklens y værdi
 	translate(&c[1], &p);
 	printCircle(c[1]);
-	printf("isValid: %d", circleIsValid(&c[1]));
+	printf("\nisValid: %d\n\n", circleIsValid(&c[1]));
 
 	int numbers[] = {11, 7, 4, 2, 1, 6};
 	int n = sizeof(numbers)/ sizeof(numbers[0]);
 
-	if (isJollyJumber(numbers, n)) {
-		printf("\nJolly");}
+	if (isJollyJumper(numbers, n)) {
+		printf("\n\nJolly\n");}
 	else {
-		printf("\nNot Jolly");}
+		printf("\n\nNot Jolly\n");}
 	return 0;
 
 }
