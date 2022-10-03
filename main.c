@@ -16,8 +16,8 @@ int main(void) {
 		printCircle(c[i]);
 	}
 	point p;
-	p.x = 2; // det som vi vil til tilføje til cirklens x værdi
-	p.y = 2; // det som vi vil til tilføje til cirklens y værdi
+	p.x = 2; // det som vi vil tilføje til cirklens x værdi
+	p.y = 2; // det som vi vil tilføje til cirklens y værdi
 	translate(&c[1], &p);
 	printCircle(c[1]);
 	printf("\nisValid: %d\n\n", circleIsValid(&c[1]));
